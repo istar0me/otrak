@@ -8,5 +8,8 @@ describe('otrak', function () {
     it('login(ccc, 1234567).id=ccc', function () {
       assert.equal('ccc', M.login('ccc', '1234567').id);
     });
+    it('login(leo, 1111)===undefined', function() {
+      assert.equal('undefined', typeof (M.login('leo', '1111')))
+    })
   });
 });
